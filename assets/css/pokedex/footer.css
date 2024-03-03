@@ -1,0 +1,60 @@
+footer {
+    width: 100%;
+    background-color: var(--cl_04);
+}
+
+footer .container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .row-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+footer .container .row-1 h1 {
+    font-size: clamp(1.8rem, 4vw, 2.1rem);
+    font-weight: bold;
+    color: var(--cl_03);
+}
+
+footer .container .row-1 h1 > span {
+    color: var(--cl_00)
+}
+
+footer .container .row-1 ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer .container .row-1 ul li a img {
+    transition: 500ms all ease;
+}
+
+footer .container .row-1 ul li a img:hover {
+    transform: scale(1.15);
+}
+
+footer .container .row-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .row-2 p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--cl_03);
+}

@@ -1,0 +1,145 @@
+main {
+    background-color: var(--cl_02);
+    width: 100%;
+    height: 540px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .row-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+main .row-1 .container-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .row-1 .container-img img {
+    width: 100%;
+    max-width: 140px;
+    transform: scale(1.4);
+}
+
+main .row-2 {
+    width: 100%;
+}
+
+main .row-2 .content-pokemon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.60rem;
+}
+
+main .row-2 header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    gap: 0.40rem;
+    
+    & h1 {
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+    }
+
+    & span {
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+        font-weight: bold;
+        color: var(--cl_00);
+    }
+}
+
+main .row-2 .types-pokemon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.80rem;
+}
+
+main .row-2 .types-pokemon .type {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cl_03);
+}
+
+main .row-2 .status-pokemon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.30rem;
+}
+
+main .row-2 .status-pokemon .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.30rem;
+
+    & h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+main .row-2 .status-pokemon .stats .container {
+    width: 100%;
+    background-color: var(--cl_04);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .row-2 .status-pokemon .stats .container .progress-bar {
+    width: 20%;
+    height: 28px;
+    border-radius: 50px;
+    animation: progress_bar 2s ease 1 forwards;
+}
+
+main .row-2 .status-pokemon .stats .container span {
+    font-size: 1.03rem;
+    font-weight: bold;
+    color: var(--cl_03);
+    position: absolute;
+    left: 50%;
+    top: 3px;
+    transform: translate(-50%);
+}
+
+.progress-bar.hp {
+    background-color: var(--cl_00);
+}
+
+.progress-bar.attack {
+    background-color: #F08030;
+}
+
+.progress-bar.defense {
+    background-color: #6791F0;
+}
+
+.progress-bar.speed {
+    background-color: #78C653;
+}

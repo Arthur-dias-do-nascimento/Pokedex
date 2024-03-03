@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    background-color: var(--cl_00);
+    padding: 10px;
+}
+
+header .container-img {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+header .container-img img {
+    width: 100%;
+    max-width: 50px;
+    position: absolute;
+    left: 50px;
+    top: 1px;
+    z-index: 1;
+}
+
+header .container-img h1 {
+    font-size: clamp(2rem, 4vw, 2.3rem);
+    font-family: "Pokemon";
+    letter-spacing: 3px;
+    color: var(--cl_01);
+    filter: drop-shadow(2px 2px 0px var(--cl_04));
+    line-height: 60px;
+    z-index: 2;
+}

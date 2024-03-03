@@ -1,0 +1,38 @@
+@media (max-width: 1100px) {
+    body > button {
+        left: 96%;
+    }
+}
+
+@media (max-width: 900px) {
+    body > button {
+        left: 95%;
+    }
+}
+
+@media (max-width: 700px) {
+    body > button {
+        left: 94%;
+    }
+}
+
+@media (max-width: 600px) {
+    footer .container .row-1 {
+        flex-direction: column;
+        gap: 0.50rem;
+    }
+
+    footer .container {
+        gap: 1rem;
+    }
+
+    body > button {
+        left: 93%;
+    }
+}
+
+@media (max-width: 500px) {
+    body > button {
+        left: 92%
+    }
+}

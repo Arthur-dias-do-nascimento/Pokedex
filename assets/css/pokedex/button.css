@@ -1,0 +1,25 @@
+body > button {
+    position: fixed;
+    top: 78%;
+    left: 96.5%;
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--cl_00);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 500ms all ease;
+}
+
+body > button a {
+    font-size: 1.1rem;
+    color: var(--cl_04);
+    cursor: pointer;
+}
+
+body > button:hover {
+    background-color: var(--cl_00);
+
+    & a {
+        color: var(--cl_03)
+    }
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cl_00: #F23838;
+    --cl_01: #FECA1B;
+    --cl_02: #FFFFFF;
+    --cl_03: #F1F1F1;
+    --cl_04: #1E1E1E;
+    --cl_05: #3868A6;
+
+    /*
+        Type Pokemon
+    */
+
+    --type_pokemon_fire: #FF963F;
+    --type_pokemon_ice: #73CEC0;
+    --type_pokemon_plant: #63BC5A;
+    --type_pokemon_ground: #D1C399;
+    --type_pokemon_rock: #e0cf9a;
+    --type_pokemon_normal: #919AA2;
+    --type_pokemon_poison: #AD46C9;
+    --type_pokemon_steel: #5A8EA2;
+    --type_pokemon_dark: #4E475B;
+    --type_pokemon_ghost: #3A59A8;
+    --type_pokemon_fairy: #EC8FE6;
+    --type_pokemon_fighting: #CE416B;
+    --type_pokemon_terrestrial: #D97845;
+    --type_pokemon_electric: #FFDD4A;
+    --type_pokemon_dragon: #0B6DC3;
+    --type_pokemon_flying: #84A3D1;
+    --type_pokemon_bug: #92BF30;
+    --type_pokemon_water: #5090D6;
+    --type_pokemon_psychic: #4B21A6;
+}

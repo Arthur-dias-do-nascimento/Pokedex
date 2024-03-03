@@ -1,0 +1,9 @@
+@keyframes progress_bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: width
+    }
+}
