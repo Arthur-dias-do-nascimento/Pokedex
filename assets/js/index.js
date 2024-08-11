@@ -1,11 +1,40 @@
 const list_pokemon = document.querySelector(".list-pokemon");
 const btn_pokemon = document.querySelector(".btn-pokemon");
 const btn_display_pokemon = document.querySelector(".btn-display-pokemon");
+const input_search_pokemon = document.querySelector("#input-search-pokemon");
+const btn_search_pokemon = document.querySelector(".btn-search-pokemon");
 
 const endPoint = `https://pokeapi.co/api/v2/pokemon/`;
 
 let size = 50;
 let key_pokemon = 1;
+
+// Functions Buttons
+
+btn_pokemon.addEventListener("click", () => {
+    size += 50;
+    LoadPokemons();
+});
+
+btn_search_pokemon.addEventListener("click", () => {
+    let search_id_pokemon = input_search_pokemon.value;
+
+    if (search_id_pokemon.length == 0 || search_id_pokemon.search(/\d/gi) == -1) {
+        alert("Error, digite um id de um pokemon");
+
+        return;
+    }
+
+    key_pokemon = Number(search_id_pokemon);
+    size = 1;
+
+    let elements_list_pokemon = [...document.querySelectorAll("ul li")];
+
+    RemoveChildsList(elements_list_pokemon)
+    GET_Pokemon();
+});
+
+// Functions
 
 function GET_Pokemon() {
     fetch(endPoint + key_pokemon)
@@ -58,6 +87,10 @@ function displayPokemon(pokemon) {
     list_pokemon.appendChild(li);
 }
 
+function RemoveChildsList(childs) {
+    childs.forEach((element) => list_pokemon.removeChild(element));
+}
+
 function LocationPokemon(id) {
     window.location = `pokemon.html?id=${id}`;
 }
@@ -67,10 +100,5 @@ const LoadPokemons = () => {
         GET_Pokemon();
     }
 };
-
-btn_pokemon.addEventListener("click", () => {
-    size += 50;
-    LoadPokemons();
-});
 
 LoadPokemons();

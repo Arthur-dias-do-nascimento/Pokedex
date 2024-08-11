@@ -2,6 +2,9 @@ header {
     width: 100%;
     background-color: var(--cl_00);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .container-img {
@@ -29,4 +32,37 @@ header .container-img h1 {
     filter: drop-shadow(2px 2px 0px var(--cl_04));
     line-height: 60px;
     z-index: 2;
+}
+
+header .container-input-search-pokemon {
+    width: 100%;
+}
+
+header .container-input-search-pokemon div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+header .container-input-search-pokemon div input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    color: var(--cl_04);
+}
+
+header .container-input-search-pokemon div button {
+    width: 40px;
+    height: 40px;
+    background: var(--cl_03);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--cl_00);
+    cursor: pointer;
 }
